@@ -1,0 +1,70 @@
+Key Points:
+
+#1. We need to know design patterns to find solutions for frequently occurring problems. And we want to
+reuse these solutions whenever we face a similar situation in the future.
+
+A. Creational Patterns:
+These patterns mainly deal with the instantiation process. Here we make the systems
+independent from how their objects are created, collected, or represented. The
+following five patterns fall into this category:
+Singleton Pattern
+Abstract Factory Pattern
+Prototype Pattern
+Factory Method Pattern
+Builder Pattern
+
+B. Structural Patterns:
+Here we focus on how objects and classes are associated or can be composed to
+make relatively large structures. Inheritance mechanisms are mostly used to combine
+interfaces or implementations. The following seven patterns fall into this category:
+Proxy Pattern
+Flyweight Pattern
+Bridge Pattern
+Facade Pattern
+Decorator Pattern
+Adapter Pattern
+Composite Pattern
+
+C. Behavioral Patterns:
+Here our concentration is on algorithms and the assignment of the critical
+responsibilities among the objects. We also need to focus on the communication
+between them. We need to take a closer look at the way those objects are
+interconnected. The following 11 patterns fall into this category.
+Observer Pattern
+Template Method Pattern
+Command Pattern
+Iterator Pattern
+State Pattern
+Mediator Pattern
+Strategy Pattern
+Chain of Responsibility Pattern
+Visitor Pattern
+Interpreter Pattern
+Memento Pattern
+
+Design Patterns simply addresses the issue of getting easliy familiar with existing product and makes a common platform for all 
+developers. We shall remember that these patterns were intended to be applied in object-oriented designs with the intention of reuse.
+
+Observer Patterns:
+
+Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and 
+updated automatically.
+
+Concept
+In this pattern, there are many observers (objects) which are observing a particular subject (object). Observers are basically 
+interested and want to be notified when there is a change made inside that subject. So, they register themselves to that subject.
+When they lose interest in the subject they simply unregister from the subject. Sometimes this model is also referred to as the
+Publisher-Subscriber model.
+
+Real-Life Example
+We can think about a celebrity who has many fans. Each of these fans wants to get all the latest updates of
+his/her favorite celebrity. So, he/she can follow the celebrity as long as his/her interest persists. When he
+loses interest, he simply stops following that celebrity. Here we can think of the fan as an observer and the
+celebrity as a subject.
+
+Computer World Example
+In the world of computer science, consider a simple UI-based example, where this UI is connected with some database (orbusiness logic). 
+A user can execute some query through that UI and after searching the database, the result is reflected back in the UI.  
+In most of the cases we segregate the UI with the database. If a change occurs in the database, the UI should be notified so that
+it can update its display according to the change.
+
